@@ -1,0 +1,4 @@
+verilog isim_temp "decoder_4x2.v"
+verilog isim_temp "decoder_4x16.v"
+verilog isim_temp "tb_decoder_4x16.v"
+verilog isim_temp "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/ISE/Projects/multiplexer/tb_multiplexer_4x1_isim_beh.exe" -prj "E:/ISE/Projects/multiplexer/tb_multiplexer_4x1_beh.prj" "work.tb_multiplexer_4x1" "work.glbl" 

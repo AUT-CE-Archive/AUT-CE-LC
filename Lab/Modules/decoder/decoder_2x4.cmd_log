@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/ISE/Projects/decoder/decoder_2x4.xst" -ofn "E:/ISE/Projects/decoder/decoder_2x4.syr" 

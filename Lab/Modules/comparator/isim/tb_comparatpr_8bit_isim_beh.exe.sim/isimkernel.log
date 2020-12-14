@@ -1,0 +1,28 @@
+Command line:
+   tb_comparatpr_8bit_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60718
+
+Wed Nov 18 11:27:14 2020
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5164.68 Meg
+
+ Total Signals          : 65
+ Total Nets             : 65
+ Total Signal Drivers   : 39
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 41
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 164
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 5007.39 Meg
+
+Wed Nov 18 11:28:16 2020
+

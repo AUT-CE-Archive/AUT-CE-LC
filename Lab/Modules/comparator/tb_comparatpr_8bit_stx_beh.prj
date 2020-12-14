@@ -1,0 +1,4 @@
+verilog isim_temp "comparator_3bits.v"
+verilog isim_temp "comparator_8bits.v"
+verilog isim_temp "tb_comparatpr_8bit.v"
+verilog isim_temp "E:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

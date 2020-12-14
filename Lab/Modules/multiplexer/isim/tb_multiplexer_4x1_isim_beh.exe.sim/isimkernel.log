@@ -1,0 +1,28 @@
+Command line:
+   tb_multiplexer_4x1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64127
+
+Sun Nov 15 23:36:38 2020
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5164.11 Meg
+
+ Total Signals          : 19
+ Total Nets             : 26
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 112
+
+ Total Simulation Time: 0.359375 sec
+
+ Current Memory Usage: 5478.68 Meg
+
+Sun Nov 15 23:37:19 2020
+
