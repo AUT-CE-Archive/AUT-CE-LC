@@ -1,2 +1,2 @@
 # AUT-CE-LC
-A repository for my Logic Circuits course
+A repository for Logic Circuits course in Amirkabir University of Technology
