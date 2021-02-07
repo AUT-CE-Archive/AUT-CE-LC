@@ -1,0 +1,515 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: TemperatureCalculator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TemperatureCalculator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TemperatureCalculator"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : TemperatureCalculator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\FA.v" into library work
+Parsing module <FA>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Adder_8bit.v" into library work
+Parsing module <Adder_8bit>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Adder_4bit.v" into library work
+Parsing module <Adder_4bit>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Multiplier_4bit.v" into library work
+Parsing module <Multiplier_4>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Adder_16bit.v" into library work
+Parsing module <Adder_16bit>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Multiplier_8.v" into library work
+Parsing module <Multiplier_8>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Check_8.v" into library work
+Parsing module <Check_8>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Check_32bit.v" into library work
+Parsing module <Check_32bit>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Check_16.v" into library work
+Parsing module <Check_16>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Multiplier8x8.v" into library work
+Parsing module <Multiplier8x8>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\Multiplier16x16.v" into library work
+Parsing module <Multiplier16x16>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\AdderSubtractor32x32.v" into library work
+Parsing module <AdderSubtractor32x32>.
+Analyzing Verilog file "D:\projects\sedrfgh\SmartHomeSystem\TemperatureCalculator.v" into library work
+Parsing module <TemperatureCalculator>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TemperatureCalculator>.
+
+Elaborating module <Multiplier8x8>.
+
+Elaborating module <Check_8>.
+
+Elaborating module <Adder_8bit>.
+
+Elaborating module <FA>.
+WARNING:HDLCompiler:1127 - "D:\projects\sedrfgh\SmartHomeSystem\Check_8.v" Line 36: Assignment to W ignored, since the identifier is never used
+
+Elaborating module <Multiplier_8>.
+
+Elaborating module <Multiplier_4>.
+
+Elaborating module <Adder_4bit>.
+WARNING:HDLCompiler:1127 - "D:\projects\sedrfgh\SmartHomeSystem\Multiplier_8.v" Line 40: Assignment to c2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\projects\sedrfgh\SmartHomeSystem\Multiplier_8.v" Line 47: Assignment to c3 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\projects\sedrfgh\SmartHomeSystem\Multiplier8x8.v" Line 34: Result of 16-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <Multiplier16x16>.
+
+Elaborating module <Check_16>.
+
+Elaborating module <Adder_16bit>.
+WARNING:HDLCompiler:1127 - "D:\projects\sedrfgh\SmartHomeSystem\Check_16.v" Line 44: Assignment to W ignored, since the identifier is never used
+
+Elaborating module <Check_32bit>.
+
+Elaborating module <AdderSubtractor32x32>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TemperatureCalculator>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\TemperatureCalculator.v".
+    Summary:
+	no macro.
+Unit <TemperatureCalculator> synthesized.
+
+Synthesizing Unit <Multiplier8x8>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Multiplier8x8.v".
+    Found 14-bit subtractor for signal <WP<13:0>> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Multiplier8x8> synthesized.
+
+Synthesizing Unit <Check_8>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Check_8.v".
+INFO:Xst:3210 - "D:\projects\sedrfgh\SmartHomeSystem\Check_8.v" line 36: Output port <carry> of the instance <A1> is unconnected or connected to loadless signal.
+    Summary:
+Unit <Check_8> synthesized.
+
+Synthesizing Unit <Adder_8bit>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Adder_8bit.v".
+    Summary:
+	no macro.
+Unit <Adder_8bit> synthesized.
+
+Synthesizing Unit <FA>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\FA.v".
+    Summary:
+Unit <FA> synthesized.
+
+Synthesizing Unit <Multiplier_8>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Multiplier_8.v".
+INFO:Xst:3210 - "D:\projects\sedrfgh\SmartHomeSystem\Multiplier_8.v" line 40: Output port <carry> of the instance <A2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\projects\sedrfgh\SmartHomeSystem\Multiplier_8.v" line 47: Output port <carry> of the instance <A3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Multiplier_8> synthesized.
+
+Synthesizing Unit <Multiplier_4>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Multiplier_4bit.v".
+    Summary:
+	no macro.
+Unit <Multiplier_4> synthesized.
+
+Synthesizing Unit <Adder_4bit>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Adder_4bit.v".
+    Summary:
+	no macro.
+Unit <Adder_4bit> synthesized.
+
+Synthesizing Unit <Multiplier16x16>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Multiplier16x16.v".
+    Found 16x16-bit multiplier for signal <W> created at line 33.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <Multiplier16x16> synthesized.
+
+Synthesizing Unit <Check_16>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Check_16.v".
+INFO:Xst:3210 - "D:\projects\sedrfgh\SmartHomeSystem\Check_16.v" line 44: Output port <carry> of the instance <A1> is unconnected or connected to loadless signal.
+    Summary:
+Unit <Check_16> synthesized.
+
+Synthesizing Unit <Adder_16bit>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Adder_16bit.v".
+    Summary:
+	no macro.
+Unit <Adder_16bit> synthesized.
+
+Synthesizing Unit <Check_32bit>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\Check_32bit.v".
+    Found 32-bit subtractor for signal <WI> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Check_32bit> synthesized.
+
+Synthesizing Unit <AdderSubtractor32x32>.
+    Related source file is "D:\projects\sedrfgh\SmartHomeSystem\AdderSubtractor32x32.v".
+WARNING:Xst:647 - Input <Sel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit adder for signal <S> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <AdderSubtractor32x32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 14-bit subtractor                                     : 1
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Xors                                                 : 285
+ 1-bit xor2                                            : 285
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <FA4> is unconnected in block <A3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <FA7> is unconnected in block <A3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <FA8> is unconnected in block <A3>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 16x16-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 3
+ 14-bit subtractor                                     : 1
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Xors                                                 : 285
+ 1-bit xor2                                            : 285
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <Multiplier8x8>: instances <C1>, <C2> of unit <Check_8> are equivalent, second instance is removed
+
+Optimizing unit <Multiplier8x8> ...
+
+Optimizing unit <TemperatureCalculator> ...
+
+Optimizing unit <Check_8> ...
+
+Optimizing unit <Adder_8bit> ...
+
+Optimizing unit <Multiplier_4> ...
+
+Optimizing unit <Check_16> ...
+
+Optimizing unit <Check_32bit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TemperatureCalculator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TemperatureCalculator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 321
+#      GND                         : 1
+#      INV                         : 26
+#      LUT2                        : 6
+#      LUT3                        : 41
+#      LUT4                        : 15
+#      LUT5                        : 31
+#      LUT6                        : 55
+#      MUXCY                       : 71
+#      VCC                         : 1
+#      XORCY                       : 74
+# IO Buffers                       : 88
+#      IBUF                        : 56
+#      OBUF                        : 32
+# DSPs                             : 1
+#      DSP48E1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  174  out of  63400     0%  
+    Number used as Logic:               174  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    174
+   Number with an unused Flip Flop:     174  out of    174   100%  
+   Number with an unused LUT:             0  out of    174     0%  
+   Number of fully used LUT-FF pairs:     0  out of    174     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          88
+ Number of bonded IOBs:                  88  out of    210    41%  
+
+Specific Feature Utilization:
+ Number of DSP48E1s:                      1  out of    240     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 16.618ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 5768696264 / 32
+-------------------------------------------------------------------------
+Delay:               16.618ns (Levels of Logic = 54)
+  Source:            tc_ref<1> (PAD)
+  Destination:       tempc<31> (PAD)
+
+  Data Path: tc_ref<1> to tempc<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   0.001   0.595  tc_ref_1_IBUF (tc_ref_1_IBUF)
+     LUT3:I0->O            5   0.097   0.398  M1/C1/A1/S<2>11 (M1/C1/A1/S<2>_bdd0)
+     LUT6:I4->O           26   0.097   0.401  M1/C1/A1/S<5>1 (M1/WI1<5>)
+     LUT4:I3->O            3   0.097   0.703  M1/M1/M2/A1/FA1/A_B_AND_2_o1 (M1/M1/M2/A1/C1)
+     LUT6:I0->O            4   0.097   0.707  M1/M1/M3/A1/FA3/Cout1 (M1/M1/M3/A1/C3)
+     LUT6:I0->O            2   0.097   0.561  M1/M1/M3/A1/FA4/Mxor_S_xo<0>1 (M1/M1/M3/n0023<3>)
+     LUT6:I2->O            3   0.097   0.693  M1/M1/M3/A2/FA3/Cout1 (M1/M1/M3/A2/C3)
+     LUT5:I0->O            2   0.097   0.698  M1/M1/M3/A2/FA4/Mxor_S_xo<0>1 (M1/M1/M3/n0022<3>)
+     LUT6:I0->O            2   0.097   0.561  M1/M1/M3/A3/FA3/Mxor_S_xo<0>1 (M1/M1/w12<5>)
+     LUT5:I1->O            5   0.097   0.530  M1/M1/A1/S<5>1 (M1/M1/w22<5>)
+     LUT3:I0->O            2   0.097   0.299  M1/M1/A2/S<6>11 (M1/M1/A2/S<6>_bdd0)
+     LUT6:I5->O            2   0.097   0.698  M1/M1/A2/S<7> (M1/M1/w2<7>)
+     LUT6:I0->O            2   0.097   0.516  M1/M1/A3/S<4>11 (M1/M1/A3/S<4>_bdd0)
+     LUT4:I1->O            1   0.097   0.693  M1/Msub_WP<13:0>_lut<13>_SW0 (N7)
+     LUT6:I0->O            0   0.097   0.000  M1/Msub_WP<13:0>_lut<13> (M1/Msub_WP<13:0>_lut<13>)
+     XORCY:LI->O           2   0.173   0.688  M1/Msub_WP<13:0>_xor<13> (M2/C1/WI<13>)
+     LUT5:I0->O            1   0.097   0.279  M2/C1/A1/A2/S<5>1 (M2/WI1<13>)
+     DSP48E1:B13->P6       1   2.690   0.379  M2/Mmult_W (M2/W<6>)
+     LUT2:I0->O            1   0.097   0.000  M2/C3/Msub_WI_lut<0> (M2/C3/Msub_WI_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  M2/C3/Msub_WI_cy<0> (M2/C3/Msub_WI_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<1> (M2/C3/Msub_WI_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<2> (M2/C3/Msub_WI_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<3> (M2/C3/Msub_WI_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<4> (M2/C3/Msub_WI_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<5> (M2/C3/Msub_WI_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<6> (M2/C3/Msub_WI_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<7> (M2/C3/Msub_WI_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<8> (M2/C3/Msub_WI_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<9> (M2/C3/Msub_WI_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<10> (M2/C3/Msub_WI_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<11> (M2/C3/Msub_WI_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<12> (M2/C3/Msub_WI_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<13> (M2/C3/Msub_WI_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<14> (M2/C3/Msub_WI_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<15> (M2/C3/Msub_WI_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<16> (M2/C3/Msub_WI_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<17> (M2/C3/Msub_WI_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<18> (M2/C3/Msub_WI_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<19> (M2/C3/Msub_WI_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<20> (M2/C3/Msub_WI_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<21> (M2/C3/Msub_WI_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<22> (M2/C3/Msub_WI_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<23> (M2/C3/Msub_WI_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<24> (M2/C3/Msub_WI_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  M2/C3/Msub_WI_cy<25> (M2/C3/Msub_WI_cy<25>)
+     MUXCY:CI->O           0   0.023   0.000  M2/C3/Msub_WI_cy<26> (M2/C3/Msub_WI_cy<26>)
+     XORCY:CI->O           5   0.370   0.314  M2/C3/Msub_WI_xor<27> (M2/C3/WI<4>)
+     LUT3:I2->O            1   0.097   0.000  AS/Madd_S_lut<27> (AS/Madd_S_lut<27>)
+     MUXCY:S->O            1   0.353   0.000  AS/Madd_S_cy<27> (AS/Madd_S_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  AS/Madd_S_cy<28> (AS/Madd_S_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  AS/Madd_S_cy<29> (AS/Madd_S_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  AS/Madd_S_cy<30> (AS/Madd_S_cy<30>)
+     XORCY:CI->O           1   0.370   0.279  AS/Madd_S_xor<31> (tempc_31_OBUF)
+     OBUF:I->O                 0.000          tempc_31_OBUF (tempc<31>)
+    ----------------------------------------
+    Total                     16.618ns (6.626ns logic, 9.992ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.12 secs
+ 
+--> 
+
+Total memory usage is 4700388 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

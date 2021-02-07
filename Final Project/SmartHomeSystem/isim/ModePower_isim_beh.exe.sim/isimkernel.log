@@ -1,0 +1,28 @@
+Command line:
+   ModePower_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63236
+
+Thu Jan 28 19:30:51 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5164.67 Meg
+
+ Total Signals          : 16
+ Total Nets             : 26
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 106
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5164.67 Meg
+
+Thu Jan 28 19:30:53 2021
+

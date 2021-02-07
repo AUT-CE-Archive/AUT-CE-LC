@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/projects/sedrfgh/SmartHomeSystem/TemperatureCalculator.xst" -ofn "D:/projects/sedrfgh/SmartHomeSystem/TemperatureCalculator.syr" 

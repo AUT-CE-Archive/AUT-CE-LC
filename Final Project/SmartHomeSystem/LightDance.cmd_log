@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/SmartHomeSystem/LightDance.xst" -ofn "F:/SmartHomeSystem/LightDance.syr" 
+xst -intstyle ise -ifn "F:/SmartHomeSystem/LightDance.xst" -ofn "F:/SmartHomeSystem/LightDance.syr" 

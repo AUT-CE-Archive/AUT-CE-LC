@@ -1,0 +1,3 @@
+verilog isim_temp "DFlop.v"
+verilog isim_temp "LightDance.v"
+verilog isim_temp "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
